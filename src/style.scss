@@ -600,10 +600,10 @@ section, footer {
     width: 100%;
   }
   .media {
-    height: 200px;
-    padding: 0;
+    height: 180px;
+    padding: 10px;
     -o-object-fit: cover;
-    object-fit: cover;
+    object-fit: contain;
   }
   h3 {
     font-size: 1.25rem;
