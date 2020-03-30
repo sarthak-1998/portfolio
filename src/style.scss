@@ -77,6 +77,7 @@ html, * {
 
 // Header section
 header {
+  background: #252627;
   max-width: 100%;
   height: 100vh;
   overflow-x: hidden;
@@ -91,7 +92,7 @@ header {
   display: block;
   height: 100%;
   width: 100%;
-  background-image: url('./assets/splash.jpg');
+  background-image: url('./assets/splash.svg');
   background-size: cover;
   background-position: center;
   &.filtered {
@@ -409,6 +410,8 @@ nav {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   &.shown {
     top: 0;
+    background-color: #252627;
+    color: #a9a9b3;
   }
   ul {
     list-style-type: none;
@@ -429,7 +432,7 @@ nav {
           color: #fff;
         }
         &.selected {
-          border-bottom: 3px solid #3c71da;
+          border-bottom: 5px solid #3c71da;
         }
         a, a:link, a:visited, a:active, a:hover {
           letter-spacing: 1px;
