@@ -1,7 +1,7 @@
 const fs = require('fs');
 const sass = require('node-sass');
 
-const filesToCopy = ['index.html', 'main.js'];
+const filesToCopy = ['index.html', 'main.js', '404.html', 'script.js'];
 const sourceDir = 'src';
 const assetsDir = 'assets';
 const targetDir = 'docs';

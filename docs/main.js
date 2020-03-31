@@ -4,6 +4,7 @@ const scrollAndResizeHandler = (e) => {
     || (lastWindowWidth < 560 && document.documentElement.clientWidth >= 560)) {
     document.getElementsByClassName('nav-icon')[0].classList.remove('open');
     document.getElementById('navbar').classList.remove('shown');
+    document.getElementById('navbar2').classList.add('shown');
   }
   if (document.documentElement.clientWidth < 560) {
     document.querySelectorAll('nav ul li').forEach(e => (e.classList.remove('selected')));
@@ -11,9 +12,11 @@ const scrollAndResizeHandler = (e) => {
   }
   if (document.body.scrollTop > window.innerHeight * 0.95 || document.documentElement.scrollTop > window.innerHeight * 0.95) {
     document.getElementById('navbar').classList.add('shown');
+    document.getElementById('navbar2').classList.remove('shown');
   }
   else {
     document.getElementById('navbar').classList.remove('shown');
+    document.getElementById('navbar2').classList.add('shown');
   }
   setSelectedNavLink();
   lastWindowWidth = document.documentElement.clientWidth;
@@ -48,3 +51,26 @@ document.querySelectorAll('nav ul li').forEach(el =>
 }));
 
 //document.getElementById('age').innerHTML = (new Date(new Date() - new Date('1993-12-08')).getFullYear() - 1970);
+
+
+$(document).ready(function() {
+  setInterval ('cursorAnimation()', 600);
+})
+function cursorAnimation() {
+  $('#logo__cursor').animate({
+      opacity: 0
+  }, 'fast', 'swing').animate({
+      opacity: 1
+  }, 'fast', 'swing');
+}
+
+
+
+
+
+
+
+
+
+
+
