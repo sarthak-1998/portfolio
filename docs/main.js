@@ -20,10 +20,10 @@ const scrollAndResizeHandler = (e) => {
 }
 
 const setSelectedNavLink = () => {
-  let sections = ['community', 'writing', 'projects', 'education', 'experience', 'introduction'];
+  let sections = ['community', 'Extra', 'projects', 'education', 'experience', 'introduction'];
   let sectionScrolls = sections.map(v => ({
     name: v,
-    visible: document.getElementById(v).offsetTop <= (document.documentElement.scrollTop + 0.333 * document.documentElement.clientHeight)
+    visible: document.getElementById(v).offsetTop <= (document.documentElement.scrollTop + 0.34 * document.documentElement.clientHeight)
   }));
   sectionScrolls.sort((a, b) => b.visible - a.visible);
   console.log(JSON.stringify(sectionScrolls));
@@ -47,4 +47,4 @@ document.querySelectorAll('nav ul li').forEach(el =>
   }
 }));
 
-document.getElementById('age').innerHTML = (new Date(new Date() - new Date('1993-12-08')).getFullYear() - 1970);
+//document.getElementById('age').innerHTML = (new Date(new Date() - new Date('1993-12-08')).getFullYear() - 1970);
