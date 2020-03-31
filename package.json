@@ -1,21 +1,16 @@
 {
-  "name": "chalarangelo-portfolio",
+  "name": "Sarthak_Jain-website",
   "version": "1.0.0",
   "description": "My personal portfolio and resume page.",
   "main": "index.js",
   "scripts": {
     "build": "node ./build.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Chalarangelo/portfolio.git"
-  },
-  "author": "Chalarangelo (chalarangelo@gmail.com)",
+  
+  "author": "Sarthak Jain (SARK)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Chalarangelo/portfolio/issues"
-  },
-  "homepage": "https://github.com/Chalarangelo/portfolio#readme",
+  
+  
   "dependencies": {
     "node-sass": "^4.11.0"
   }
